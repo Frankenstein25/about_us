@@ -162,7 +162,8 @@ img{
 }
 .bar {
     font: 16px sans-serif;
-    margin-left: 10vw;
+    position: relative;
+    left:-2%;
 }
 .box .card-body{
     font-size: 14px;
@@ -207,8 +208,9 @@ img{
     border-radius: 15px;
 }
 .bar {
+    position: relative;
+    left:22%;
     font: 1rem sans-serif;
-    margin-left: 10vw;
 }
 .box .card-body{
     font-size: 18px;
