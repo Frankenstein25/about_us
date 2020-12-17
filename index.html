@@ -1,77 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cretronix</title>
-
-
-    <link rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-expand navbar-light" style="background-color:  rgba(0,0,0,0.8);">
-
-      <div class="hide">
-          <img src="logo pisb_2.png" height="40" alt="LOGO">
-      </div>
-      <div class="bar ">
-        <a class="navbar-brand text-white " href="#"> About Us </a>
-      </div>
-     
-
-    </nav>
-   <div class="container-fluid h90  ">
-    <div class="row " style="align-items: center;">
-      <div class="col-md-8">
-        <div class="card box  text-light">
-          <div  class="card-body  ">
-            <h3 class="card-title text-center">Our Team</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit itaque fugiat velit rem magni. Laboriosam commodi rem nobis accusamus illo voluptate in ipsam natus autem, velit sit, omnis eveniet possimus 
-              molestias! Natus incidunt officiis alias, aliquid non illo qui possimus similique adipisci tempore? Assumenda optio repellendus accusantium animi repellat, nesciunt odio voluptas nihil eum, eveniet ipsam? Distinctio vitae dolore
-              atque dolorum ipsam eveniet recusandae molestiae quaerat neque accusantium facilis nam consequuntur ullam perspiciatis, molestias suscipit deserunt sint quis, tempore, ut a delectus laudantium iusto. 
-              Autem, quae repellat! Corporis unde eos consequatur ipsa praesentium labore consectetur architecto molestiae, repudiandae suscipit?
-            </p><br>
-            <p> Contact Us At :</p>
-            <ol>
-              <li>Akshay S : 7057602590</li><br>
-              <li>Ajay K : 8668460490</li><br>
-              <li>Janhavi R : 975874630</li>
-            </ol>
-            </div>
-            <div class="card-footer text-center hd">
-              <form>
-                <input type="checkbox"> I have read all the instructions
-                carefully
-              </input>
-            </form>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    <div class="row  ">
-  	    <div   class="col-sm-12 text-center   bg-transparent">
-  		    <button id="btn" type="button" >
-             Back
+<html>
+    <head>
+        <title>Web Team Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet"  href="index.css">
+        <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light justify-content-right nbt">
+            <img class="cl" src="logo pisb_2.png">
+            <a class="navbar-brand ht"  href="#" >Our Team</a>
+            <span class="clock"></span>
+            <button class="navbar-toggler navbar-dark " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon navbar-dark"></span>
             </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> 
+              <ul class="navbar-nav ">
+                <li class="nav-item ">
+                  <a class="nav-link no1 to"  href="#" >Home </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link no2 to"  href="#" >Question Page</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link no3 to" data-target="#staticBackdrop" data-toggle="modal"  href="#" >Log out</a>
+                </li>
+              </ul>
+            </div>
 
-  	    </div>
-    </div>
-  </div>
+              <!--Logout Modal -->
+              <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Log out</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Do you really want to Log out?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success">Yes</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+          </nav>
+          <div class="container-fluid">
+            <div class="row hd">CRETRONIX WEB TEAM</div>
+              <div class="row brdr">
+                <div class="col-10 col-md-3 brdr ">
+                    <div class="card formedia">
+                        <h5 class="card-header  subh">Web Team</h5>
+                        <div class="card-body"> 
+                          <img class="pro" src="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-3 brdr ">
+                  <div class="card formedia">
+                      <h5 class="card-header  subh">Web Team</h5>
+                      <div class="card-body"> 
+                        <img class="pro" src="">
+                      </div>
+                  </div>
+              </div>
+                <div class="col-10 col-md-3 brdr ">
+                    <div class="card formedia">
+                        <h5 class="card-header  subh">Web Team</h5>
+                        <div class="card-body">
+                          <img class="pro" src="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-3 brdr ">
+                    <div class="card formedia">
+                        <h5 class="card-header  subh">Web Team</h5>
+                        <div class="card-body">
+                          <img class="pro" src="">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row hd">CRETRONIX SENIOR TEAM</div>
+                <div class="row brdr">
+                    <div class="col-10 col-md-3 brdr ">
+                        <div class="card formedia">
+                            <h5 class="card-header subh">Senior Team </h5>
+                            <div class="card-body">
+                              <img class="pro" src="">      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3 brdr ">
+                      <div class="card formedia">
+                          <h5 class="card-header subh">Senior Team</h5>
+                          <div class="card-body">
+                            <img class="pro" src=""> 
+                          </div>
+                      </div>
+                  </div>
+                    <div class="col-10 col-md-3 brdr ">
+                        <div class="card formedia ">
+                            <h5 class="card-header subh">Senior Team </h5>
+                            <div class="card-body">
+                              <img class="pro" src="">  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-3 brdr ">
+                        <div class="card formedia">
+                            <h5 class="card-header subh">Senior Team</h5>
+                            <div class="card-body">
+                              <img class="pro" src="">  
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row hd">CRETRONIX JUNIOR TEAM</div>
+                    <div class="row brdr">
+                      <div class="col-10 col-md-3 brdr ">
+                          <div class="card formedia">
+                              <h5 class="card-header subh">Junior Team</h5>
+                              <div class="card-body">
+                                <img class="pro" src="">  
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-10 col-md-3 brdr ">
+                        <div class="card formedia">
+                            <h5 class="card-header subh">Junior Team</h5>
+                            <div class="card-body">
+                              <img class="pro" src=""> 
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-10 col-md-3 brdr ">
+                          <div class="card formedia ">
+                              <h5 class="card-header subh">Junior Team</h5>
+                              <div class="card-body">
+                                <img class="pro" src="">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-10 col-md-3 brdr ">
+                          <div class="card formedia">
+                              <h5 class="card-header subh">Junior Team</h5>
+                              <div class="card-body">
+                                <img class="pro" src=""> 
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div id="adjust" style="padding:3%;"></div>
+                    <footer class="text-center fixed-bottom">
+                      <div class="conatiner-fluid">
+                          <div class="footer-text pt-3 pb-2" style="font-size: 20px;">&copyPICT IEEE Student Branch</div>
+                      </div>
+                  </footer>
+              
 
-    <footer class=" fixed-bottom ">
-      <div class="container-fluid text-center pt-2 pb-2" style="color:white;">
-        &#169PICT IEEE STUDENT BRANCH  
-      </div>
-   </footer>
-  </body>
 
+          
+      
 
+    </body>
 </html>
