@@ -201,6 +201,14 @@ a.qno:hover{
     .ht{
         font-size:5.2vw;
     }
+    .si{
+        margin-left:5.8vw;
+    }
+}
+@media(max-width:350px){
+    .si{
+        margin-left:5.2vw;
+    }
 }
 @media(max-width:321px){
     .qno{
