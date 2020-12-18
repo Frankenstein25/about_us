@@ -29,6 +29,9 @@
   ::-moz-scrollbar-thumb:hover {
     background:rgba(0,0,0,0.3) 
   }
+body{
+    background-color: #00AACC;
+}
 
 footer {
   background-color: #000;
@@ -109,6 +112,16 @@ a.qno:hover{
     cursor:pointer;
     transform: scale(1.05);
 }
+.si{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    margin-left: 1.6vw;
+}
+.si:hover{
+    cursor:pointer;
+    transform:scale(1.15);
+}
 
 /* Media Query */
 
@@ -172,6 +185,9 @@ a.qno:hover{
     }
     #adjust{
         padding: 8% !important;
+    }
+    .si{
+        margin-left:7.3vw;
     }
 }
 @media(max-width:376px){
